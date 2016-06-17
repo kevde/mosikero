@@ -1,0 +1,36 @@
+head
+  title Musikero App
+body
+  .views
+    .view.view-main
+      .pages.navbar-fixed.toolbar-fixed
+        .page(data-page='index')
+          .navbar
+            .navbar-inner
+              .center Mosikero
+          .page-content
+            p Page content goes here
+            a(href='about.html') About app
+            +hello
+            +Song
+          .toolbar
+            .toolbar-inner
+              a.link(href='#') Link 1
+              a.link(href='#') Link 2
+template(name='Song')
+  each(song in songs)
+    button.button #{song.title}
+template(name='hello')
+  button Click Me
+  p You've pressed the button #{counter} times.
+//- template(name='info')
+//-   h2 Learn Meteor!
+//-   ul
+//-     li
+//-       a(href='https://www.meteor.com/try' target='_blank') Do the Tutorial
+//-     li
+//-       a(href='http://guide.meteor.com' target='_blank') Follow the Guide
+//-     li
+//-       a(href='https://docs.meteor.com' target='_blank') Read the Docs
+//-     li
+//-       a(href='https://forums.meteor.com' target='_blank') Discussions
