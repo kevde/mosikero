@@ -7,7 +7,6 @@
 meteor-base             # Packages every Meteor app needs to have
 mobile-experience       # Packages for a great mobile UX
 mongo                   # The database Meteor supports right now
-blaze-html-templates    # Compile .html files into Meteor Blaze views
 reactive-var            # Reactive variable for tracker
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
@@ -19,10 +18,13 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-mquandalle:jade
-# civilframe:angular-jade
-nobutakaoshiro:framework7-ios-material
-loftsteinn:framework7-material
+
+# mquandalle:jade
+# nobutakaoshiro:framework7-ios-material
+# loftsteinn:framework7-material
+
 dab0mb:ionic-assets
 aldeed:simple-schema
-barbatus:typescript
+angular2-compilers
+driftyco:ionic
+civilframe:angular-jade
