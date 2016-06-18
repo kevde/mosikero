@@ -23,8 +23,10 @@ insecure                # Allow all DB writes from clients (for prototyping)
 # nobutakaoshiro:framework7-ios-material
 # loftsteinn:framework7-material
 
+angular2-compilers
+barbatus:angular2-runtime
+meteortypescript:compiler
+pbastowski:jade-templates
 dab0mb:ionic-assets
 aldeed:simple-schema
-angular2-compilers
 driftyco:ionic
-civilframe:angular-jade

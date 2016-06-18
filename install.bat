@@ -11,7 +11,8 @@ IF "%1"=="" GOTO initNpm
 GOTO endProgram
 
 :initNpm
-	meteor npm install & meteor npm install --save angular2-meteor & npm install angular2-meteor-auto-bootstrap --save 
+	meteor npm install & meteor npm install --save angular2-meteor @angular/platform-browser-dynamic@2.0.0-rc.1 @angular/core@2.0.0-rc.1 @angular/common@2.0.0-rc.1 @angular/compiler@2.0.0-rc.1 @angular/platform-browser@2.0.0-rc.1
+& npm install angular2-meteor-auto-bootstrap --save 
 IF "%1"=="" GOTO initTypings
 GOTO endProgram
 
