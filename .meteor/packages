@@ -22,11 +22,14 @@ insecure                # Allow all DB writes from clients (for prototyping)
 # mquandalle:jade
 # nobutakaoshiro:framework7-ios-material
 # loftsteinn:framework7-material
+# gabeandnerdy:angular2-jade
 
+pbastowski:jade-templates
+modules
+mrt:reload-disable
 angular2-compilers
 barbatus:angular2-runtime
 meteortypescript:compiler
-pbastowski:jade-templates
 dab0mb:ionic-assets
 aldeed:simple-schema
 driftyco:ionic

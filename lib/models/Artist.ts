@@ -1,7 +1,7 @@
-// export default class Artist {
-// 	name: string;
+export default class Artist {
+	name: string;
 
-// 	constructor(name: string) {
-// 		this.name = name;
-// 	}
-// }
+	constructor(name: string) {
+		this.name = name;
+	}
+}

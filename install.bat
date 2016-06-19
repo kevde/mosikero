@@ -24,3 +24,4 @@ GOTO endProgram
 
 # meteor add-platform android
 # https://waffle.io/kevde/mosikero
+# http://victorsavkin.com/post/119943127151/angular-2-template-syntax

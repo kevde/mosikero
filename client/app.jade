@@ -1,9 +1,6 @@
-ul
-  li
-    span Dubstep-Free Zone
-    p
-      | Can we please just for an evening not listen to dubstep.
-  li
-    span All dubstep all the time
-    p
-      | Get it on!
+song-form
+.list
+  .item.item-icon-left.item-icon-right(*ngFor='let song of songs')
+    i.icon.ion-trash-a(on-click="removeSong(song)")
+    |       {{song.title}}
+    span.text-note {{song.artists}}
