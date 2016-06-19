@@ -1,26 +1,24 @@
 import 'reflect-metadata';
-import { Component } from '@angular/core';
+import { Component, provide } from '@angular/core';
 import { bootstrap } from 'angular2-meteor-auto-bootstrap';
-import template from './app.jade';
-import { Songs } from '/lib/collections/Songs.js';
-import { SongForm } from './imports/SongForm';
-
+import { ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig } from '@angular/router-deprecated';
+import { APP_BASE_HREF } from '@angular/common';
+import { SongList } from '/client/imports/song-list/songList.ts';
+import { SongInfo } from '/client/imports/song-info/songInfo.ts';
 
 @Component({
   selector: 'app',
-  template: template,
-  directives: [SongForm]
+  templateUrl: '/client/app.html',
+  directives: [ROUTER_DIRECTIVES]
 })
-class Mosikero {
-  songs: Mongo.Cursor < Object > ;
+@RouteConfig([
+  { path: '/', name: 'SongList', component: SongList },
+  { path: '/song/:songId', name: 'SongInfo', component: SongInfo }
+])
+export class Mosikero {
+	constructor() {
 
-  constructor() {
-    this.songs = Songs.find();
-  }
-
-  removeSong(song) {
-    Songs.remove(song._id);
-  }
+	}
 }
 
-bootstrap(Mosikero);
+bootstrap(Mosikero, [ROUTER_PROVIDERS, provide(APP_BASE_HREF, { useValue: '/' })]);
