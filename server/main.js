@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
-import * as fixtures from './fixtures/fixtures.js';
+// import '../imports/api/tasks.js';
 
 Meteor.startup(() => {
-  fixtures.dumpSongs();
+  // code to run on server at startup
 });
